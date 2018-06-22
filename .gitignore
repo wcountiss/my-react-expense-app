@@ -4,4 +4,6 @@ public/dist/
 .env.development
 temp.txt
 .DS_Store
-
+src/playground
+playground/
+src/tests
