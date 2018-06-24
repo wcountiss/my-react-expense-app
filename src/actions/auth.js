@@ -1,9 +1,11 @@
 import { firebase, googleAuthProvider, twitterAuthProvider, facebookAuthProvider } from '../firebase/firebase';
 
-
-export const login = (uid) => ({
+//
+export const login = (user) => ({
   type: 'LOGIN',
-  uid
+  uid: user.uid,
+  displayName: user.displayName || undefined,
+  photoURL: user.photoURL || undefined
 });
 
 export const startLogin = () => {
